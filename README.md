@@ -1,3 +1,9 @@
+# REMINDER!
+
+IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD THE DEFAULT 
+
+-----------------------------------
+
 # PATCH DATE:
 
 *19th December 2019, 03:10 UTC*
@@ -13,6 +19,8 @@
 [BluePeacocks -- HoodedCube -- Cubo -- Main GitHub Assets]
 
 -----------------------------------
+
+
 
 
 <strong>THE END</strong>
