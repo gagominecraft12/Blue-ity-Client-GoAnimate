@@ -33,7 +33,7 @@ if exist notinstalled (
 echo Blue'ity client is now starting...
 echo Running VFProxy..
 
-start ..\tts\VFProxy\start.bat
+start tts\VFProxy\start.bat
 
 echo Please navigate to http://localhost on your browser.
 npm start
