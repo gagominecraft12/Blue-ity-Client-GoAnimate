@@ -1,6 +1,7 @@
-﻿Param(
+Param(
 	[Parameter(Mandatory)][int]$start,
 	[Parameter(Mandatory)][int]$end,
+	[Parameter(Mandatory)][int]$offset = 50,
 	[Parameter(Mandatory)][int]$offset = 0,
 	[Parameter(Mandatory)][string]$url
 )
