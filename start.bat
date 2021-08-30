@@ -1,6 +1,6 @@
 :: Important stuff
 @echo off && cls
-title GoAnimate Wrapper
+title Blue'ity Client
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -11,10 +11,31 @@ TASKKILL /IM node.exe /F 2>nul
 cls
 
 :::::::::::::::::::::::::::::
-:: Start GoAnimate Wrapper ::
+:: Start Blue'ity Client ::
 :::::::::::::::::::::::::::::
 
 :: Check for installation
+
+if exist notinstalled (
+	echo VFProxy Is not installed!
+
+	
+
+	ren "notinstalled" "installed"
+	echo Starting VFProxy
+
+	echo Lets delay to start the VFProxy Program
+
+	PING localhost -n 5
+
+	echo its not patched you liar
+
+	PING localhost -n 20 >NUL
+
+	start ..\tts\VFProxy\start.bat
+
+	
+
 if exist notinstalled (
 	echo Blue'ity Client not downloaded! Installing...
 	call npm install
