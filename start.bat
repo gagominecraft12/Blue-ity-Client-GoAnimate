@@ -16,24 +16,6 @@ cls
 
 :: Check for installation
 
-if exist notinstalled (
-	echo VFProxy Is not installed!
-
-	
-
-	ren "notinstalled" "installed"
-	echo Starting VFProxy
-
-	echo Lets delay to start the VFProxy Program
-
-	PING localhost -n 5
-
-	echo its not patched you liar
-
-	PING localhost -n 20 >NUL
-
-	start ..\tts\VFProxy\start.bat
-
 	
 
 if exist notinstalled (
@@ -49,5 +31,9 @@ if exist notinstalled (
 :: Run npm start
 :start
 echo Blue'ity client is now starting...
+echo Running VFProxy..
+
+start ..\tts\VFProxy\start.bat
+
 echo Please navigate to http://localhost on your browser.
 npm start
