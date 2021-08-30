@@ -34,7 +34,7 @@ module.exports = function (req, res, url) {
 	var attrs, params, title;
 	switch (url.pathname) {
 		case "/cc": {
-			title = "Character Creator";
+			title = "The Character Creator from Blue'ity Client - Make a Character Online!";
 			attrs = {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
