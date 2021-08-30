@@ -3,7 +3,14 @@
 IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 -----------------------------------
 
-# PATCH DATE:
+# NON BUSSINES THEMES END DATE:
+
+*2016*
+
+-----------------------------------
+
+
+# LEGACY VIDEO MAKER PATCH DATE:
 
 *19th December 2019, 03:10 UTC*
 
