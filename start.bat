@@ -16,7 +16,7 @@ cls
 
 :: Check for installation
 if exist notinstalled (
-	echo GoAnimate Wrapper is not installed! Installing...
+	echo Blue'ity Client not downloaded! Installing...
 	call npm install
 	ren "notinstalled" "installed"
 	cls
@@ -27,6 +27,6 @@ if exist notinstalled (
 
 :: Run npm start
 :start
-echo GoAnimate Wrapper is now starting...
+echo Blue'ity client is now starting...
 echo Please navigate to http://localhost on your browser.
 npm start

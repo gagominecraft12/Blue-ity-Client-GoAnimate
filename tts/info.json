@@ -3493,10 +3493,17 @@
 			"desc": "Sebastian",
 			"gender": "M",
 			"country": "AU",
+			"language": "en"
+		},	
+		"pump": {
+			"arg": "pump",
+			"desc": "Pump - FNF",
+			"gender": "M",
+			"country": "US",
 			"language": "en",
-			"source": "voicery"
+			"source": "uberduck"
 		}
-	},
+		},
 	"languages": {
 		"th": "Thai",
 		"el": "Greek",
