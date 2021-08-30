@@ -24,6 +24,8 @@ IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 
 [BluePeacocks -- HoodedCube -- Cubo -- Main GitHub Assets]
 
+[imageny -- Creator of VFProxy]
+
 -----------------------------------
 
 
