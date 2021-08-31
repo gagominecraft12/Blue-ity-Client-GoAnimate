@@ -1,3 +1,6 @@
+title boyfreind maker fnf 0.0.1
+@echo off && cls
+
 echo off
 
 
@@ -24,14 +27,21 @@ TIMEOUT /T 2
 title Blue'ity Client b0.0.1 (Terminating Existing node apps.)
 
 TASKKILL /IM node.exe /F 2>nul
-cls
+
+@echo off && cls
 
 :::::::::::::::::::::::::::::
 ::  Start Blue'ity Client  ::
 :::::::::::::::::::::::::::::
 
 :: Check for installation
-@echo GOING TO CHECK FOR 
+@echo GOING TO CHECK FOR SOMETHING.
+
+:: no black people allowed :)
+
+@echo working on files you fucks
+
+@echo off && cls
 
 :start
 	title Blue'ity Client b0.0.1 (Checking)
