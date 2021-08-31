@@ -39,7 +39,7 @@ TASKKILL /IM node.exe /F 2>nul
 
 :: no black people allowed :)
 
-@echo working on files you fucks
+@echo working on files..
 
 @echo off && cls
 
