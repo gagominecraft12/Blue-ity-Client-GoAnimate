@@ -18,13 +18,13 @@ IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 
 # Credits: 
 
-[Blue'ity -- Garza -- Creator of GAR: R / Blue'ity Client]
+<a href="https://github.com/gagominecraft12">>Blue'ity Creator of GAR: R / Blue'ity Client</a>
 
-[GoAnimate/Vyond -- Alvin Hung -- Creator of GoAnimate/Vyond],,
+<a href="https://twitter.com/alvinhung">GA/Vyond - Alvin Hung</a>
 
-[BluePeacocks -- HoodedCube -- Cubo -- Main GitHub Assets]
+<a href="https://github.com/BluePeacocks/">BluePeacocks - Main GitHub Assets</a>
 
-[imageny -- Creator of VFProxy]
+<a href="https://github.com/imageny/">Imageny - Creator of VFProxy</a>
 
 -----------------------------------
 
