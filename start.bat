@@ -1,4 +1,4 @@
-title boyfreind maker fnf 0.0.1
+title boyfreind maker fnf 0.1.1
 @echo off && cls
 
 echo off
@@ -7,13 +7,13 @@ echo off
 
 @echo off && cls
 
-title Running Blue'ity Client b0.0.1
+title Running Blue'ity Client b0.1.1
 
 TIMEOUT /T 5
 
 :: Important stuff
 @echo off && cls
-title Blue'ity Client b0.0.1 (Starting)
+title Blue'ity Client b0.1.1 (Starting)
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -24,7 +24,7 @@ echo gonna terminate the existing node js apps. so lets get a delay
 
 TIMEOUT /T 2
 
-title Blue'ity Client b0.0.1 (Terminating Existing node apps.)
+title Blue'ity Client b0.1.1 (Terminating Existing node apps.)
 
 TASKKILL /IM node.exe /F 2>nul
 
@@ -44,7 +44,7 @@ TASKKILL /IM node.exe /F 2>nul
 @echo off && cls
 
 :start
-	title Blue'ity Client b0.0.1 (Checking)
+	title Blue'ity Client b0.1.1 (Checking)
 
 if exist notinstalled (
 	echo Blue'ity Client not downloaded! Installing...
@@ -59,7 +59,7 @@ if exist notinstalled (
 ::VFProxy installation
 :start
 
-title Blue'ity Client b0.0.1 (Installing VFProxy)
+title Blue'ity Client b0.1.1 (Installing VFProxy)
 
 echo we need to run the VFProxy
 
@@ -77,7 +77,7 @@ echo Starting.
 
 TIMEOUT /T 15
 
-title Blue'ity Client b0.0.1 
+title Blue'ity Client b0.1.1
 
 @echo Lets clear to make it more good
 
@@ -85,6 +85,20 @@ TIMEOUT /t 5
 
 echo off
 
+@echo off && cls
+
+:: Starting Ungoogled Chromiun
+:start
+title Blue'ity Client b0.1.1 - Starting ungoogled Chromiun.
+
+TIMEOUT /t 12
+echo Starting Ungoogled Chromiun
+
+echo not gonna simp for monika lol
+
+start .\browser\Ungoogled-Chromiun\chrome.exe --allow-outdated-plug-ins --app=http://localhost:1200/html/list.html
+
+cls
 @echo off && cls
 
 :: Run npm start

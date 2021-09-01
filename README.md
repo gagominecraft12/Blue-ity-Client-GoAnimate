@@ -28,6 +28,8 @@ IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 
 <a href="https://github.com/imageny/">Imageny - Creator of VFProxy</a>
 
+<a hred="https://github.com/Eloston/">Eloston - Creator of Ungoogled Chromiun</a>
+
 -----------------------------------
 
 
