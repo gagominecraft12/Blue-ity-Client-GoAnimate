@@ -1,11 +1,11 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "🔍Decompiler!",
+			"uri": "decompileFs:/"
 		},
 		{
-			"name": "Blue-ity-Client-GoAnimate",
-			"path": "Blue-ity-Client-GoAnimate"
+			"path": "."
 		}
 	],
 	"settings": {}
