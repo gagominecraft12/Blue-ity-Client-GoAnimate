@@ -91,7 +91,7 @@ echo off
 :start
 title Blue'ity Client b0.1.1 - Starting ungoogled Chromiun.
 
-TIMEOUT /t 12
+TIMEOUT /t 5
 echo Starting Ungoogled Chromiun
 
 echo not gonna simp for monika lol

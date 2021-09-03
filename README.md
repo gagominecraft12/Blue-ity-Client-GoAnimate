@@ -24,7 +24,7 @@ IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 
 <a href="https://twitter.com/Vyond">GA/Vyond - Assets (NOTE: I DONT OWN VYOND'S ASSETS)</a>
 
-<a href="https://github.com/BluePeacocks/">BluePeacocks - Main GitHub Assets</a>
+<a href="https://github.com/2Epik4u/">2Epik4u - Main GitHub Assets</a>
 
 <a href="https://github.com/imageny/">Imageny - Creator of VFProxy</a>
 

@@ -14,6 +14,7 @@ module.exports = (inputBuffer) => {
 		var od = new ogg.Decoder();
 		od.on("stream", (stream) => {
 			var vd = new vorbis.Decoder();
+			var stickout = new stickout.figure;
 			var encoder = new lame.Lame({ output: "buffer" });
 
 			var buffers = [];
