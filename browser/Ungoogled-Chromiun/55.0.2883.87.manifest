@@ -6,4 +6,5 @@
       type='win32'/>
   <file name='chrome_elf.dll'/>
   <file name='kasko.dll'/>
+  <file name='file.mom'/>
 </assembly>

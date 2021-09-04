@@ -3487,6 +3487,7 @@
 			"country": "IE",
 			"language": "en",
 			"source": "voicery"
+		
 		},
 		"sebastian": {
 			"arg": "sebastian",
@@ -3496,12 +3497,20 @@
 			"language": "en"
 		},	
 		"pump": {
-			"arg": "pump",
+			"arg": "Ese personaje Pump es un Sr.Pelo personaje creado en sus Skid y Pump series.",
 			"desc": "Pump - FNF",
-			"gender": "M",
+			"gender": "F",
 			"country": "US",
 			"language": "en",
 			"source": "uberduck"
+		},
+			"skid": {
+				"arg": "Ese personaje Skid es un Sr.Pelo personaje creado en sus Skid y Pump series.",
+				"desc": "Skid - FNF",
+				"gender": "F",
+				"country": "US",
+				"language": "en",
+				"source": "uberduck"
 		}
 		},
 	"languages": {
@@ -3531,5 +3540,20 @@
 		"pl": "Polish",
 		"nl": "Dutch",
 		"cy": "Welsh"
+	},
+	"sources": {
+		
+		"uberduck": "uberduck.ai"
+		,
+		"voiceforge": "voiceforge.com/demo"
+		,
+		"voicery": "voicery.com"
+		,
+		"cepstral": "cepstral.com"
+		,
+		"youtube": "youtube.com"
+		,
+		"ericJasson": "blogs.ericjasson.com/voice"
+
 	}
 }

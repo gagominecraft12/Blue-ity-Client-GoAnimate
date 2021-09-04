@@ -10,4 +10,6 @@ request.mainSlice.subarray(atob)
 
 themes = true
 
+themes = <Animation>".xml",".shuffle",".swf",".purge"</Animation>
+
 require("./client")
