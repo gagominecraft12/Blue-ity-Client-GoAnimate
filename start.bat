@@ -3,6 +3,13 @@ title boyfreind maker fnf 0.1.1
 
 echo off
 
+:::::::::::::::
+::   Things  ::
+:::::::::::::::
+
+@echo off && cls
+
+pushd "%~dp0"
 
 
 @echo off && cls
