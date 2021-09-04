@@ -26,6 +26,13 @@
    <allow-http-request-headers-from domain="d2qrjeyl4jwu9j.cloudfront.net" headers="*" secure="false"/>
    <allow-http-request-headers-from domain="lightspeed.edplatform.goanimate.com" headers="*" secure="false"/>
    <allow-http-request-headers-from domain="d3l3i46hwjinat.cloudfront.net" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="localhost:4664" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="2epik4u.xyz" headers="" secure="false"/>
+   <allow-http-request-headers-from domain="api.goanimate4schools.com"/>
+   <allow-http-request-headers-from domain="api.goanimate.com"/>
+   <allow-http-request-headers-from domain="yourmom.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="cdn.goanimate.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="vyond.com/static/" headers="*" secure="false"/>
    <allow-http-request-headers-from domain="cdn.discordapp.com" headers="*" secure="false"/>
 
    <!--Blue'ity is cute cuz you enter here!-->
