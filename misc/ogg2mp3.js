@@ -3,6 +3,7 @@ const ogg = require("ogg");
 const vorbis = require("vorbis");
 const lame = require("node-lame");
 const duplex = require("stream").Duplex;
+const mp3Duration = require("mp3-duration").apply;
 
 /**
  *

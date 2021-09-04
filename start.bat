@@ -108,9 +108,10 @@ echo Blue'ity client is now starting...
 echo Please navigate to http://localhost:1200 on your browser.
 npm start
 
-if exist error (
-	echo Ow. beep :(
+:: Error message.
+
+echo Ow. beep :(
 		echo Blue'ity Client crashed. this does that the main or assets is glitched.
 		echo Restart the project with starting the batch restart.bat file.
-		
+
 		Pause

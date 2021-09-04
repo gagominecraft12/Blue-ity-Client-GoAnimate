@@ -4,7 +4,7 @@ title Blue'ity Client b0.1.1 (Restarting the Client)
 
 TIMEOUT /T 4
 
-TASKKILL /T start.bat
+TASKKILL /T /IM start.bat
 
 echo Restarting Blue'ity Client
 

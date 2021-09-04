@@ -34,7 +34,7 @@ module.exports = function (req, res, url) {
 	var attrs, params, title;
 	switch (url.pathname) {
 		case "/cc": {
-			title = "The Character Creator from Blue'ity Client - Make a Character Online!";
+			title = "The Character Creator from Blue'ity Client - Make a Character with Blue'ity Client!!";
 			attrs = {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
@@ -67,7 +67,7 @@ module.exports = function (req, res, url) {
 		}
 
 		case "/cc_browser": {
-			title = "CC Browser";
+			title = "CC Browser - Blue'ity Client";
 			attrs = {
 				data: process.env.SWF_URL + "/cc_browser.swf", // data: 'cc_browser.swf',
 				type: "application/x-shockwave-flash",
@@ -104,7 +104,7 @@ module.exports = function (req, res, url) {
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
+			title = "Video Editor - Blue'ity Client";
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
