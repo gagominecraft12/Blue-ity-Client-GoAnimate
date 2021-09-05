@@ -3,6 +3,9 @@
     "Lua.diagnostics.globals": [
         "wait",
         "q",
-        "ui"
+        "ui",
+        "bit",
+        "x",
+        "n"
     ]
 }

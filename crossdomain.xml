@@ -36,7 +36,12 @@
    <allow-http-request-headers-from domain="cdn.goanimate.com" headers="*" secure="false"/>
    <allow-http-request-headers-from domain="vyond.com/static/" headers="*" secure="false"/>
    <allow-http-request-headers-from domain="cdn.discordapp.com" headers="*" secure="false"/>
-   <allow-http-request-headers-from domain=""
+   <allow-http-request-headers-from domain=""/>
+
+   
+   <allow-action-from domain="github.com"/>
+   <allow-action-from domain="gists.github.com"/>
+   <allow-action-from domain="roku.com"/>
 
    <!--Blue'ity is cute cuz you enter here!-->
 
