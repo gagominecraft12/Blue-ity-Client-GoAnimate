@@ -1,3 +1,6 @@
+:start
+:: Clean spam
+@echo off && cls
 title boyfreind maker fnf 0.1.1
 @echo off && cls
 
@@ -6,6 +9,8 @@ echo off
 :::::::::::::::
 ::   Things  ::
 :::::::::::::::
+
+SETLOCAL ENABLEDELAYEDEXPANSION
 
 @echo off && cls
 
@@ -56,7 +61,7 @@ TASKKILL /IM node.exe /F 2>nul
 if exist notinstalled (
 	echo Blue'ity Client not downloaded! Installing...
 	call npm install
-	ren "notinstalled" "installed"
+	ren "notinstalled.txt" "installed.txt"
 	cls
 	goto start
 ) else (
