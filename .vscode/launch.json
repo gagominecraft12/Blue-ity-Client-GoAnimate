@@ -5,6 +5,19 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "launch",
+			"type": "lua",
+			"request": "launch",
+			"stopOnEntry": true,
+			"program": "${workspaceFolder}/main.lua",
+			"cwd": "${workspaceFolder}",
+			"path": "${workspaceFolder}/?.lua",
+			"cpath": "${workspaceFolder}/?.dll",
+			"arg": [],
+			"consoleCoding": "utf8"
+		},
+
+		{
 			"type": "node",
 			"request": "launch",
 			"name": "Iniciar programa",

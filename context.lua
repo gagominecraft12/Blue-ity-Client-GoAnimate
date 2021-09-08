@@ -12,3 +12,6 @@ package("node.js")
 local software = false;
 
 ui.reference()
+if "childposition" then
+    select("#")
+end
