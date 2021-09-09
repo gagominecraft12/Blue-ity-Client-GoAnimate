@@ -16,7 +16,15 @@
 			"arg": [],
 			"consoleCoding": "utf8"
 		},
-
+		{
+			"name": "Attach",
+			"port": 9229,
+			"request": "attach",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		},
 		{
 			"type": "node",
 			"request": "launch",

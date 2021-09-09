@@ -21,7 +21,7 @@ pushd "%~dp0"
 
 title Running Blue'ity Client b0.1.1
 
-TIMEOUT /T 5
+ping -n 5 127.0.0.1>nul
 
 :: Important stuff
 @echo off && cls
@@ -34,11 +34,13 @@ title Blue'ity Client b0.1.1 (Starting)
 :: Terminate existing node.js apps
 echo gonna terminate the existing node js apps. so lets get a delay
 
-TIMEOUT /T 2
+ping -n 2 127.0.0.1>nul
 
 title Blue'ity Client b0.1.1 (Terminating Existing node apps.)
 
-TASKKILL /IM node.exe /F 2>nul
+ping -n 1 127.0.0.1>nul
+
+taskkill /IM node.exe /F
 
 @echo off && cls
 
@@ -77,23 +79,19 @@ echo we need to run the VFProxy
 
 echo Dont worry. we need to delay this batch before we wait to install VFProxy
 
-TIMEOUT /T 5
+ping -n 2 127.0.0.1>nul
 
-cd .\VFProxy
-
-start start.bat
-
-cd  ..
-
+start startVFProxy.bat
+ping -n 2 127.0.0.1>nul
 echo Starting.
 
-TIMEOUT /T 15
+ping -n 3 127.0.0.1>nul
 
 title Blue'ity Client b0.1.1
 
 @echo Lets clear to make it more good
-
-TIMEOUT /t 5
+cls
+ping -n 5 127.0.0.1>nul
 
 echo off
 
@@ -103,7 +101,7 @@ echo off
 :start
 title Blue'ity Client b0.1.1 - Starting ungoogled Chromiun.
 
-TIMEOUT /t 5
+ping -n 4 127.0.0.1>nul
 echo Starting Ungoogled Chromiun
 
 echo not gonna simp for monika lol
@@ -118,12 +116,14 @@ cls
 echo Blue'ity client is now starting...
 
 echo Please navigate to http://localhost:1200 on your browser.
+ping -n 10 127.0.0.1>nul
+npm install
+ping -n 4 127.0.0.1>nul
 npm start
-
-:: Error message.
 
 echo Ow. beep :(
 		echo Blue'ity Client crashed. this does that the main or assets is glitched.
+		cls
 		echo Restart the project with starting the batch restart.bat file.
-
+		ping -n 4 127.0.0.1>nul
 		Pause
