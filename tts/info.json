@@ -384,6 +384,14 @@
 			"arg": "en-US_AllisonVoice",
 			"desc": "Allison (Watson)"
 		},
+		"david_cepstral": {
+			"country": "US",
+			"language": "en",
+			"gender": "M",
+			"source": "cepstral",
+			"arg": "david_cepstral",
+			"desc": "David (Cepstral)"
+		},
 		"allisonv3": {
 			"country": "US",
 			"language": "en",
