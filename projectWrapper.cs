@@ -7,20 +7,30 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using projectWrapper;
 using ascii;
 using version;
+namespace("Blue'ity Client Videomaker")
+InitializeComponent("WARNING. THIS IS FOR BLUE'ITY CLIENT CS. IT WILL BE HAVING TIGHT CSS AND SOME PROBLEMS AND ILL FIX THIS.");
 
 bool version = true
 
-this.version = "1.1.3"
+this.version = "1.1.3";
+bool generation = "fileAsset=false";
+bool ascii = "HACKACCOUNT", false;
+{
+    ascii = true;
+};
 
 EventHandler temp = MyEvent;
 if (temp != null)
 {
     temp(10);
+    generation("Decoding seconds.. 2")
+    wait("2")
 }
 
 else
@@ -30,10 +40,8 @@ else
 
 internal structure
 
----------------------------
+"---------------------------", this.ascii = true
 
-namespace Videomaker
-{
     partial class Form1
     {
         /// <summary>

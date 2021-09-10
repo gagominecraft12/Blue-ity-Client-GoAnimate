@@ -6,6 +6,7 @@ const http = require("http");
  * @param {http.IncomingMessage} req
  * @param {http.ServerResponse} res
  * @param {import("url").UrlWithParsedQuery} url
+ * @param {CredentialRequestOptions} req
  * @returns {boolean}
  */
 module.exports = function (req, res, url) {
@@ -16,7 +17,7 @@ module.exports = function (req, res, url) {
 
 		var body = Buffer.from(data.body_zip, "base64");
 		var thumb = data.thumbnail_large && Buffer.from(data.thumbnail_large, "base64");
-		starter.save(body, thumb, mId, data.presaveId).then((nId) => res.end("0" + nId));
+		starter.save(body, thumb, mId, data.saveId).then((nId) => res.end("0" + nId));
 	});
 	return true;
 };

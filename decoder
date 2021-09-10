@@ -1,0 +1,9 @@
+FX.:::::ROJ
+
+FXFX11111111111111111=:::::OPTION;;:.
+
+
+OpenSSL,maaa
+CROSSDOMAIN("./crossdomain.xml");
+DECODINGURL="BASE64";
+LUA1("./context.lua");

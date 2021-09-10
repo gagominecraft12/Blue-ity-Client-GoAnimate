@@ -1,9 +1,8 @@
 :start
 :: Clean spam
 @echo off && cls
-title boyfreind maker fnf 0.1.1
+title boyfreind maker fnf
 @echo off && cls
-
 echo off
 
 :::::::::::::::
@@ -19,13 +18,22 @@ pushd "%~dp0"
 
 @echo off && cls
 
-title Running Blue'ity Client b0.1.1
+title Running Blue'ity Client
 
 ping -n 5 127.0.0.1>nul
 
 :: Important stuff
 @echo off && cls
-title Blue'ity Client b0.1.1 (Starting)
+title Blue'ity Client - (Starting)
+
+:::::::::::::::::::
+:: LOADING FILES ::
+:::::::::::::::::::
+title Blue'ity Client - (Loading Files)
+ping -n 3 127.0.0.1>nul
+echo Loading files (May take few minutes/hours or seconds i think LOL)
+assoc
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -34,7 +42,7 @@ title Blue'ity Client b0.1.1 (Starting)
 :: Terminate existing node.js apps
 echo gonna terminate the existing node js apps. so lets get a delay
 
-ping -n 2 127.0.0.1>nul
+ping -n 3 127.0.0.1>nul
 
 title Blue'ity Client b0.1.1 (Terminating Existing node apps.)
 
@@ -49,7 +57,14 @@ taskkill /IM node.exe /F
 :::::::::::::::::::::::::::::
 
 :: Check for installation
+ping -n 4 127.0.0.1>nul
 @echo GOING TO CHECK FOR SOMETHING.
+ren "initialWrapper" "initialFileWrapper" "CandyWrapper"
+call assoc
+cls & assoc
+assoc
+@echo off && cls
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: no black people allowed :)
 
@@ -58,7 +73,7 @@ taskkill /IM node.exe /F
 @echo off && cls
 
 :start
-	title Blue'ity Client b0.1.1 (Checking)
+	title Blue'ity Client (Checking)
 
 if exist notinstalled (
 	echo Blue'ity Client not downloaded! Installing...
@@ -73,7 +88,7 @@ if exist notinstalled (
 ::VFProxy installation
 :start
 
-title Blue'ity Client b0.1.1 (Installing VFProxy)
+title Blue'ity Client - (Installing VFProxy)
 
 echo we need to run the VFProxy
 
@@ -87,7 +102,7 @@ echo Starting.
 
 ping -n 3 127.0.0.1>nul
 
-title Blue'ity Client b0.1.1
+title Blue'ity Client
 
 @echo Lets clear to make it more good
 cls
@@ -99,7 +114,7 @@ echo off
 
 :: Starting Ungoogled Chromiun
 :start
-title Blue'ity Client b0.1.1 - Starting ungoogled Chromiun.
+title Blue'ity Client - Starting ungoogled Chromiun.
 
 ping -n 4 127.0.0.1>nul
 echo Starting Ungoogled Chromiun
@@ -117,8 +132,6 @@ echo Blue'ity client is now starting...
 
 echo Please navigate to http://localhost:1200 on your browser.
 ping -n 10 127.0.0.1>nul
-npm install
-ping -n 4 127.0.0.1>nul
 npm start
 
 echo Ow. beep :(
