@@ -1,7 +1,7 @@
 {
-	"name": "retro",
-	"version": "0.0.1b",
-	"versionStr": "0.0.1b",
+	"name": "blueityclient",
+	"version": "version_SYNC",
+	"versionStr": "0.1.4",
 	"scripts": {
 		"start": "node main.js"
 	},

@@ -13,11 +13,11 @@ ping -n 2 127.0.0.1>nul
 echo Credits to 2Epik4u - Wrapper Online Videomaker
 ping -n 4 127.0.0.1>nul
 echo Credits to Imageny - Creator of VFProxy
-ping -n 1 127.0.0.1>nul
-echo Credits to Eloston - Creator of Ungoogled Chromiun
-ping -n 1 127.0.0.1>nul
-echo Credits to Alvin Hung - Creator of Business themes and Vyond
 ping -n 2 127.0.0.1>nul
+echo Credits to Eloston - Creator of Ungoogled Chromiun
+ping -n 2 127.0.0.1>nul
+echo Credits to Alvin Hung - Creator of Business themes and Vyond
+ping -n 3 127.0.0.1>nul
 @echo off && cls
 echo off
 
@@ -63,7 +63,7 @@ echo gonna terminate the existing node js apps. so lets get a delay
 
 ping -n 3 127.0.0.1>nul
 
-title Blue'ity Client b0.1.1 (Terminating Existing node apps.)
+title Blue'ity Client - (Terminating Existing node apps.)
 
 ping -n 1 127.0.0.1>nul
 
@@ -104,21 +104,6 @@ if exist notinstalled (
 	goto start
 )
 
-::VFProxy installation
-:start
-
-title Blue'ity Client - (Installing VFProxy)
-
-echo we need to run the VFProxy
-
-echo Dont worry. we need to delay this batch before we wait to install VFProxy
-
-ping -n 2 127.0.0.1>nul
-
-start startVFProxy.bat
-ping -n 2 127.0.0.1>nul
-echo Starting.
-
 ping -n 3 127.0.0.1>nul
 
 title Blue'ity Client
@@ -150,12 +135,11 @@ cls
 echo Blue'ity client is now starting...
 
 echo Please navigate to http://localhost:1200 on your browser.
-ping -n 10 127.0.0.1>nul
+ping -n 4 127.0.0.1>nul
 npm start
 
 echo Ow. beep :(
-		echo Blue'ity Client crashed. this does that the main or assets is glitched.
-		cls
-		echo Restart the project with starting the batch restart.bat file.
-		ping -n 4 127.0.0.1>nul
-		Pause
+echo Blue'ity Client crashed. this does that the main or assets is glitched.
+echo Restart the project with starting the batch restart.bat file.
+ping -n 4 127.0.0.1>nul
+Pause

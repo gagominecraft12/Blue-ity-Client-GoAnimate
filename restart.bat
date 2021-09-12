@@ -8,22 +8,22 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 @echo off
 echo off
 
-title Blue'ity Client b0.1.1 (Restarting the Client)
+title Blue'ity Client - (Restarting the Client)
 
 @echo off && cls
 TIMEOUT /T 4
 
-TASKKILL /T /IM start.bat
+TASKKILL start.bat
 
 echo Restarting Blue'ity Client
 
-title Blue'ity Client b0.1.1 (Starting)
+title Blue'ity Client - (Starting)
 
 start start.bat
 
 @echo off && cls
 
-title Blue'ity Client b0.1.1 (Done!)
+title Blue'ity Client - (Done!)
 
 echo Done!
 pause
