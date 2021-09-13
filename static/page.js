@@ -48,7 +48,7 @@ module.exports = function (req, res, url) {
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					original_asset_id: query["id"] || null,
-					themeId: "business",
+					themeId: "retro",
 					ut: 60,
 					bs: "default",
 					appCode: "go",
@@ -103,7 +103,7 @@ module.exports = function (req, res, url) {
 			let presave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
+					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml", ".mp4")}`;
 			title = "Video Editor - Blue'ity Client";
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
@@ -140,7 +140,7 @@ module.exports = function (req, res, url) {
 		}
 
 		case "/player": {
-			title = "Player";
+			title = "Blue'ity Client - Player";
 			attrs = {
 				data: process.env.SWF_URL + "/player.swf",
 				type: "application/x-shockwave-flash",

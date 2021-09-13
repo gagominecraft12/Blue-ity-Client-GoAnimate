@@ -14,7 +14,13 @@ using projectWrapper;
 using ascii;
 using version;
 namespace("Blue'ity Client Videomaker")
-InitializeComponent("WARNING. THIS IS FOR BLUE'ITY CLIENT CS. IT WILL BE HAVING TIGHT CSS AND SOME PROBLEMS AND ILL FIX THIS.");
+
+
+{
+    InitializeComponent();
+}
+
+"If the client did not start as well. this does not apply with Windows XP."
 
 bool version = true
 
