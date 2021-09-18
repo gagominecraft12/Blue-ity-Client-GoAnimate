@@ -1,7 +1,7 @@
 {
 	"name": "blueityclient",
 	"version": "version_SYNC",
-	"versionStr": "0.1.4",
+	"versionStr": "0.1.5",
 	"scripts": {
 		"start": "node main.js"
 	},

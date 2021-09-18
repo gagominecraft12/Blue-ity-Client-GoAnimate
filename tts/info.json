@@ -1,5 +1,41 @@
 {
 	"voices": {
+		"fnf-pump": {
+			"country": "US",
+			"language": "en",
+			"gender": "F",
+			"source": "uberduck",
+			"arg": "fnf-pump",
+			"week": "2",
+			"desc": "Pump"
+		},
+		"fnf-skid": {
+			"country": "US",
+			"language": "en",
+			"gender": "F",
+			"source": "uberduck",
+			"arg": "fnf-skid",
+			"week": "2",
+			"desc": "Skid"
+		},
+		"monster": {
+			"country": "US",
+			"language": "en",
+			"gender": "M",
+			"source": "uberduck",
+			"arg": "monster",
+			"week": "2",
+			"desc": "Lemon Demon (Monster)"
+		},
+		"fnf-tabi": {
+			"country": "US",
+			"language": "en",
+			"gender": "M",
+			"source": "uberduck",
+			"arg": "tabi",
+			"week": "geno-cide",
+			"desc": "Tabi (MOD)"
+		},
 		"ella": {
 			"country": "US",
 			"language": "en",

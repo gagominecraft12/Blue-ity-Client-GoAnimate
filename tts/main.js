@@ -230,6 +230,44 @@ module.exports = (voiceName, text) => {
 				);
 				break;
 			}
+			case "voiceforge": {
+				/* Special thanks to ItsCrazyScout for helping us find the new VoiceForge link and being kind enough to host xom's VFProxy on his site! */
+				var q = qs.encode({
+					voice: voice.arg,
+					msg: text,
+				});
+				http.get(
+					{
+						host: "uberduck.ai",
+						port: "80",
+						path: `#voice=`,
+						doButton: `<div style="display:flex;justify-content:center;align-items:center"><button type="button" class="btn btn-primary">Synthesize</button></div>`,
+						/* Also that uberduck does their api to use "POST" but i put it to "GET" -Blue'ity */
+						headers: {
+							"accept-encoding": "node, gzip, hastagAPI",
+							origin: "https://uberduck.ai",
+							referer: "https://api.uberduck.ai/speak",
+							/* 
+							Also to do with the website called "https://api.uberduck.ai/speak" I USE THE UBERDUCK API. I DO NOT OWN UBERDUCK
+							*/
+							requestUrl: {
+								request: "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1631924491124",
+
+								strictJS: "https://browser.sentry-cdn.com/6.2.2/bundle.min.js",
+
+								strictJS: "https://uberduck.ai/_next/static/chunks/0cf71672.68042a0cfbc90420d3c7.js",
+
+								request: "https://api.uberduck.ai/speak-status?uuid=",
+							},
+
+							websiteCookie: {
+								website: "https://api.uberduck.ai",
+							}
+						}
+					},
+				);
+				break;
+			}
 			case "cereproc": {
 				const req = https.request(
 					{
