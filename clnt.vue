@@ -5,6 +5,8 @@ import from 'vue'
 import from 'node.js'
 import from 'httpServer'
 import from 'CODEla',  name:"code_la", "colon":"."
+import scopedSlots
+import { nodejs } from "module";
     <div>
         app.config.isCustomElement = "NODEJS"
         vm.get(expression)

@@ -1,0 +1,15 @@
+:: Made by Blue'ity#8383
+
+:::::::::::::::::::::::::::::::"nofunction"
+
+""
+
+"Having trouble? X is for the left. Y is for the up. Z is for the right"
+
+adam("0, 0, 0", "facing, "center")
+
+eve("0, 0, 0.2", "facing, "center")
+
+bob("0.005", "0.0002", "0.0003", "facing, "center")
+
+rocky("0.004", "0.0002", "0.0002", "facing, "center")

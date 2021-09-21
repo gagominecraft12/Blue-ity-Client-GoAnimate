@@ -1,6 +1,8 @@
 const loadPost = require("../misc/post_body");
 const starter = require("./main");
 const http = require("http");
+const lineTo = require("line");
+const { save } = require("../character/main");
 
 /**
  * @param {http.IncomingMessage} req
@@ -17,7 +19,8 @@ module.exports = function (req, res, url) {
 
 		var body = Buffer.from(data.body_zip, "base64");
 		var thumb = data.thumbnail_large && Buffer.from(data.thumbnail_large, "base64");
-		starter.save(body, thumb, mId, data.saveId).then((nId) => res.end("0" + nId));
+		starter.save(body, thumb, mId, data.saveId).then((nId) => res.end("2" + nId));
+		ByteLengthQueuingStrategy.bind(save);
 	});
 	return true;
 };

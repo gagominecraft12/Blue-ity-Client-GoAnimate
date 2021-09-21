@@ -63,34 +63,6 @@ module.exports = (voiceName, text) => {
 				break;
 			}
 			case "cepstral":
-			case "voiceforge": {
-				https.get("https://www.voiceforge.com/demo", (r) => {
-					const cookie = r.headers["set-cookie"];
-					var q = qs.encode({
-						voice: voice.arg,
-						voiceText: text,
-					});
-					var buffers = [];
-					https.get(
-						{
-							host: "www.voiceforge.com",
-							path: `/demos/createAudio.php?${q}`,
-							headers: { Cookie: cookie },
-						},
-						(r) => {
-							r.on("data", (b) => buffers.push(b));
-							r.on("end", () => {
-								const html = Buffer.concat(buffers);
-								const beg = html.indexOf('id="mp3Source" src="') + 20;
-								const end = html.indexOf('"', beg);
-								const loc = html.subarray(beg, end).toString();
-								get(`https://www.voiceforge.com${loc}`).then(res).catch(rej);
-							});
-						}
-					);
-				});
-				break;
-			}
 			case "vocalware": {
 				var [eid, lid, vid] = voice.arg;
 				var cs = md5(`${eid}${lid}${vid}${text}1mp35883747uetivb9tb8108wfj`);
@@ -230,6 +202,7 @@ module.exports = (voiceName, text) => {
 				);
 				break;
 			}
+
 			case "voiceforge": {
 				/* Special thanks to ItsCrazyScout for helping us find the new VoiceForge link and being kind enough to host xom's VFProxy on his site! */
 				var q = qs.encode({
@@ -238,15 +211,53 @@ module.exports = (voiceName, text) => {
 				});
 				http.get(
 					{
+						host: "localhost",
+						port: "8181",
+						path: `/vfproxy/speech.php?${q}`,
+					},
+					(r) => {
+						var buffers = [];
+						r.on("data", (d) => buffers.push(d));
+						r.on("end", () => res(Buffer.concat(buffers)));
+						r.on("error", rej);
+					}
+				);
+				break;
+			}
+
+			case "uberduck": {
+				http.get(
+					{
+
 						host: "uberduck.ai",
 						port: "80",
 						path: `#voice=`,
+						rhymeWith: "doButton",
 						doButton: `<div style="display:flex;justify-content:center;align-items:center"><button type="button" class="btn btn-primary">Synthesize</button></div>`,
-						/* Also that uberduck does their api to use "POST" but i put it to "GET" -Blue'ity */
+						/* Also that uberduck does their api to use "GET" but i put it to "POST" -Blue'ity */
+						method: "POST",
 						headers: {
 							"accept-encoding": "node, gzip, hastagAPI",
-							origin: "https://uberduck.ai",
-							referer: "https://api.uberduck.ai/speak",
+							origin: "https://api.uberduck.ai",
+
+							/* 
+							THE UNUSED VERSION WHICH WILL BE A ERROR.
+							     origin: "https://uberduck.ai", */
+							/*
+							*
+							It says that would having access with the Uberduck API does not have access with guests or members.
+							It could not be found if you have have admin access.
+							THE ERROR CODE WOULD SAY: {"detail":"Method Not Allowed"} "Method Not Allowed" if you have your role Member or Guest. YOU NEED TO BE A ADMIN OR DEVELOPER OF THIS SITE IF RECOMMENDED
+							*/
+							/*referer: "https://api.uberduck.ai/speak",*/
+							referer: "https://api.uberduck.ai/speak?DISCORDAPI=ROLE,ADMIN?ADMIN=TRUE",
+
+							/*
+							    Atleast i fixed this using Discord API for HTML Business
+							*/
+							discBotID: "https://discord.com/oauth2/authorize?client_id=799791375431499799&permissions=2148352&scope=bot%20applications.commands",
+							discbotID: "79979137543149979",
+
 							/* 
 							Also to do with the website called "https://api.uberduck.ai/speak" I USE THE UBERDUCK API. I DO NOT OWN UBERDUCK
 							*/
@@ -263,11 +274,15 @@ module.exports = (voiceName, text) => {
 							websiteCookie: {
 								website: "https://api.uberduck.ai",
 							}
+
+							
+							
 						}
 					},
 				);
 				break;
 			}
+			
 			case "cereproc": {
 				const req = https.request(
 					{

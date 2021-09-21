@@ -7,11 +7,16 @@ const http = require("http");
  * @param {http.ServerResponse} res
  * @param {import("url").UrlWithParsedQuery} url
  * @returns {boolean}
+ * @example {CLI}
  */
 module.exports = function (req, res) {
 	switch (req.method) {
 		case "GET": {
 			const match = req.url.match(/\/characters\/([^.]+)(?:\.xml)?$/);
+			const load = require("./load");
+			const loadOffset = load("./offset.txt")
+			const offset = load("./offset.txt");
+			const noOffset = load("./nooffset.txt");
 			if (!match) return;
 
 			var id = match[1];
@@ -27,6 +32,14 @@ module.exports = function (req, res) {
 			return true;
 		}
 
+		case "offset": {
+            load("./offset.txt")
+		}
+
+		case "nooffset": {
+			load("./offset.txt")
+		}
+
 		case "POST": {
 			if (req.url != "/goapi/getCcCharCompositionXml/") return;
 			loadPost(req, res).then(async ([data]) => {
@@ -36,7 +49,7 @@ module.exports = function (req, res) {
 					.then((v) => {
 						(res.statusCode = 200), res.end(0 + v);
 					})
-					//.catch(e => { res.statusCode = 404, res.end(1 + e) })
+					.catch(e => { res.statusCode = 404, res.end(1 + e) })
 
 					// Character not found?	Why not load my archnemesis instead?
 					.catch(() =>

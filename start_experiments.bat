@@ -12,8 +12,11 @@
 
 :: Some things if i came from a TV-MA Movie from Netflix LOL ::
 
-set CLIENT_VER=v0.5.0
+set CLIENT_VER=v0.5.1
 set CLIENT_BUILD=GIT_OFFICIALBRANCH
+set GMAIL=example@example.com
+set BOOLEAN="goto bool", "echo Are you sure to bool?", "/p answer "yes" "no!
+set VOLTS=6
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -134,9 +137,23 @@ echo off
 @echo off && cls
 
 :: Starting VFProxy
-title Blue'ity Client - Starting VFProxy
+title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Starting VFProxy
 :start
 start .\tools\vfproxy.bat
+
+:: Execute SSH and Review Volts.
+:start
+title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Verifying SSH Populate
+verify on
+ping -n 2 127.0.0.1>nul
+verify -ssh example@example.com
+ping -n 2 127.0.0.1>nul
+verify on
+
+:: Starting HTTP-SERVER for Blue'ity Client
+title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Starting HTTP-SERVER
+:start
+start .\tools\http_server.bat
 
 :: Starting Ungoogled Chromiun
 :start
@@ -148,11 +165,13 @@ ping -n 4 127.0.0.1>nul
 :start
 echo Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% is now starting...
 ping -n 3 127.0.0.1>nul
-echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% is starting Ungoogled Chromiun
-echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% - Starting Ungoogled Chromiun
+echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% is starting Basilik
+echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% - Starting Basilik
 echo not gonna simp for monika lol
 
-start .\browser\Ungoogled-Chromiun\chrome.exe --allow-outdated-plug-ins --app=http://localhost:1200/html/list.html
+start .\browser\Brazilik\BrowserPlugins\Flash\FlashPlayerPlugin_34_0_0_155.exe
+
+start .\browser\Brazilik\Basilisk-Portable\Basilisk-Portable.exe --app=http://localhost:1200/html/list.html --selectedPlug-in=Adoble-Flash--34.0.0.155
 
 cls
 

@@ -3,13 +3,16 @@ const test = require('tap').test;
 const ecstatic = require('../lib/core');
 const http = require('http');
 const request = require('request');
+const loadTVRequest = require('../TVRequest');
+const line = isNumber="";
+const distint = new chuckle = null;
 "-------------------------------------------------------------------------------------------------------"
 "Layer 1 - To TV Casts"
 listen("DUMPS");
 if("TVExpected");require("./formats");
 importScripts("Dumps")
 "Cases the Dumps to not wipe the heroku saves"
-if("Characterwipe");constants("DISTINT");
+if("Characterwipe");constants=distint;loadTVRequest="goToLine",line="61";
 {
     SafeArray("TEXT")
     spawn("child", axis.name)
@@ -26,6 +29,7 @@ import { access } from 'fs';
 import { reference } from 'js'
 import { start } from 'repl';
 import PIPEFROMSTREAMING from 'TV'
+import { isNumber } from 'util';
 reference(true);
 PIPEFROMSTREAMING("TV")
 Boolean("TVDevice","Panasonic","VIZIO","PANASONIC","Vizio","vizio","panasonic","ROKU","roku","Roku","lg","LG","Lg");

@@ -3,9 +3,9 @@ pushd "%~dp0"
 title Blue'ity Client - (Starting VFProxy)
 pushd ..\VFProxy\
 echo Starting PHP server for VFProxy...
-start start.bat
+.\php\php.exe -S 127.0.0.1:8181
 echo VFProxy Started!
-echo Blue'ity Client 
+title Blue'ity Client 
 echo:
 echo:
 pause & exit

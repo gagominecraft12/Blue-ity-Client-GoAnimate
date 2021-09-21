@@ -1,0 +1,35 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.18f|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+npmeadax.dll|$
+C:\PROGRA~2\MEADCO~1\npmeadax.dll|$
+2.0.0.29|$
+1189008674000|0|0|0|$
+MeadCo's Neptune|$
+MeadCo's Neptune|$
+1
+0|application/x-meadco-neptune-ax|MeadCo Neptune|ax|$
+NPSWF32.dll|$
+C:\Windows\system32\Macromed\Flash\NPSWF32.dll|$
+9.0.283.0|$
+1284509968000|0|0|0|$
+Shockwave Flash 9.0  r283|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+NPSWF32_34_0_0_155.dll|$
+C:\Users\GAEL GARZA\Videos\lelseq\Programs\wrapperga\GoAnimate-Wrapper-master\browser\Brazilik\BrowserPlugins\Flash\NPSWF32_34_0_0_155.dll|$
+34.0.0.155|$
+1631297449630|0|0|0|$
+Shockwave Flash 34.0 r0*|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]
