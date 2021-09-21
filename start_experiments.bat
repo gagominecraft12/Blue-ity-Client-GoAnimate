@@ -157,7 +157,7 @@ start .\tools\http_server.bat
 
 :: Starting Ungoogled Chromiun
 :start
-title Blue'ity Client - Starting ungoogled Chromiun.
+title Blue'ity Client - Starting Basilisk.
 
 ping -n 4 127.0.0.1>nul
 
@@ -170,6 +170,16 @@ echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% - Starting Basilik
 echo not gonna simp for monika lol
 
 start .\browser\Brazilik\BrowserPlugins\Flash\FlashPlayerPlugin_34_0_0_155.exe
+
+::
+      :: CUSTOM BROWSERS ::
+       
+      :: REMEMBER ::
+
+	  :: YOU SHOULD PUT A PORTABLE BROWSER AND PASTE THIS ON THE "./browser" FOLDER.
+
+	  :: REPLACE THE PREFIERRED BROWSER TO OTHER YOU WANT AS YOUR FLASH-FAVORITED BROWSER!
+::
 
 start .\browser\Brazilik\Basilisk-Portable\Basilisk-Portable.exe --app=http://localhost:1200/html/list.html --selectedPlug-in=Adoble-Flash--34.0.0.155
 
