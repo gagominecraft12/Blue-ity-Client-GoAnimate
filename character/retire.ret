@@ -1,3 +1,0 @@
-make pick = "do '.js' supportWith="charData.js", end"
-
-noCharacter("pick:Adam")end

@@ -12,7 +12,7 @@
 
 :: Some things if i came from a TV-MA Movie from Netflix LOL ::
 
-set CLIENT_VER=v0.5.1
+set CLIENT_VER=v0.5.2
 set CLIENT_BUILD=GIT_OFFICIALBRANCH
 set GMAIL=example@example.com
 set BOOLEAN="goto bool", "echo Are you sure to bool?", "/p answer "yes" "no!
@@ -51,8 +51,6 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 ::notinstalled.txt
 @echo off && cls
 
-pushd "%~dp0"
-
 
 @echo off && cls
 
@@ -83,11 +81,23 @@ echo gonna terminate the existing node js apps. so lets get a delay
 
 ping -n 3 127.0.0.1>nul
 
-title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - (Terminating Existing node apps.)
+title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Terminating Existing Node and PHP and Neko Programs
 
 ping -n 1 127.0.0.1>nul
 
-taskkill /IM node.exe /F
+taskkill /IM node.exe
+
+ping -n 2 127.0.0.1>nul
+
+taskkill /IM php.exe
+
+ping -n 2 127.0.0.1>nul
+
+taskkill /IM .\main\tools\neko\nekoc.exe
+
+ping -n 2 127.0.0.1>nul
+
+:: Even how "Neko" is valuable
 
 @echo off && cls
 
@@ -98,10 +108,9 @@ taskkill /IM node.exe /F
 :: Check for installation
 ping -n 4 127.0.0.1>nul
 @echo GOING TO CHECK FOR SOMETHING.
-ren "initialWrapper" "initialFileWrapper" "CandyWrapper"
-call assoc
-cls & assoc
-assoc
+::
+:: Valuable Script
+::
 @echo off && cls
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -139,7 +148,14 @@ echo off
 :: Starting VFProxy
 title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Starting VFProxy
 :start
-start .\tools\vfproxy.bat
+start .\main\tools\vfproxy.bat
+:: Starting Neko
+
+title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Starting Neko
+:start
+start .\main\tools\neko\nekoc.exe
+
+@echo off && cls
 
 :: Execute SSH and Review Volts.
 :start
@@ -153,7 +169,8 @@ verify on
 :: Starting HTTP-SERVER for Blue'ity Client
 title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD% - Starting HTTP-SERVER
 :start
-start .\tools\http_server.bat
+start .\main\tools\http_server.bat
+start .\main\tools\http_server-2.bat
 
 :: Starting Ungoogled Chromiun
 :start
@@ -169,7 +186,7 @@ echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% is starting Basilik
 echo Blue'ity Client - %CLIENT_VER% %CLIENT_BUILD% - Starting Basilik
 echo not gonna simp for monika lol
 
-start .\browser\Brazilik\BrowserPlugins\Flash\FlashPlayerPlugin_34_0_0_155.exe
+start .\main\browser\Brazilik\BrowserPlugins\Flash\FlashPlayerPlugin_34_0_0_155.exe
 
 ::
       :: CUSTOM BROWSERS ::
@@ -181,7 +198,7 @@ start .\browser\Brazilik\BrowserPlugins\Flash\FlashPlayerPlugin_34_0_0_155.exe
 	  :: REPLACE THE PREFIERRED BROWSER TO OTHER YOU WANT AS YOUR FLASH-FAVORITED BROWSER!
 ::
 
-start .\browser\Brazilik\Basilisk-Portable\Basilisk-Portable.exe --app=http://localhost:1200/html/list.html --selectedPlug-in=Adoble-Flash--34.0.0.155
+start .\main\browser\Brazilik\Basilisk-Portable\Basilisk-Portable.exe --app=http://localhost:1200/html/list.html --selectedPlug-in=Adoble-Flash--34.0.0.155
 
 cls
 
@@ -193,7 +210,7 @@ title Blue'ity Client - %CLIENT_VER% - %CLIENT_BUILD%
 
 echo Hit CTRL + C to stop
 
-start .\tools\node.bat
+start .\main\tools\node-launchbasilisk.bat
 
 ping -n 35967389046767304676347890789478978907890789078900789789078907890789078908574857896756789567878906789078907890568974689034679084675686756896753568906768907568907069489076890768093768097653906735389067089567954699999999999999999999367357679789065647890789078907890456756234785662342347892347896234234785785623487578786347856234562347857832645378256783456876542348976455896745896759867456768954690875689753696359876457680766890596806755563565645634669876534897654687345680973678903670893638097345689734565555686966847376980347679083467389046747890898036890536759806675689076906768907056900006897459687689076498067568907 127.0.0.1>nul
 

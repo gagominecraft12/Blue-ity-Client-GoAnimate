@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+   <allow-access-from domain="goanimate.com" secure="false" />
+   <allow-access-from domain="goanimate4schools.com" secure="false" />
+   <allow-access-from domain="*.goanimate.com" secure="false"/>
+   <allow-access-from domain="demo.cdn.goanimate.com" secure="false"/>
+   <allow-access-from domain="*.goanimate4schools.com" secure="false"/>
+   <allow-access-from domain="s3.amazonaws.com" secure="false" />
+   <allow-access-from domain="lightspeed.st.goanimate.com" secure="false"/>
+   <allow-access-from domain="demo.cdn.skoletube.goanimate.com" secure="false"/>
+   <allow-access-from domain="d3v4eglovri8yt.cloudfront.net" secure="false" />
+   <allow-access-from domain="d2qrjeyl4jwu9j.cloudfront.net" secure="false" />
+   <allow-access-from domain="d2la53d5hsg1yx.cloudfront.net" secure="false" />
+   <allow-access-from domain="d1t0wjmrwaukvj.cloudfront.net" secure="false" />
+   <allow-access-from domain="d3l3i46hwjinat.cloudfront.net" secure="false" />
+   <allow-access-from domain="dgny9w8h2biiq.cloudfront.net" secure="false" />
+   <allow-access-from domain="www4.goanimate.com" secure="false" />
+   <allow-access-from domain="cdn.discordapp.com" secure="false" />
+   <allow-access-from domain="static.vyond.com" secure="false" />
+   <allow-access-from domain="cdn.goanimate.com" secure="false" />
+   
+   <allow-http-request-headers-from domain="demo.cdn.goanimate.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="dgny9w8h2biiq.cloudfront.net" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="lightspeed.goanimate.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="d3v4eglovri8yt.cloudfront.net" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="lightspeed.goanimate4schools.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="d2qrjeyl4jwu9j.cloudfront.net" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="lightspeed.edplatform.goanimate.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="d3l3i46hwjinat.cloudfront.net" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="localhost:4664" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="2epik4u.xyz" headers="" secure="false"/>
+   <allow-http-request-headers-from domain="api.goanimate4schools.com"/>
+   <allow-http-request-headers-from domain="api.goanimate.com"/>
+   <allow-http-request-headers-from domain="ga.vyond.com/static/animation/" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="cdn.goanimate.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="ga.vyond.com/static/" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="cdn.discordapp.com" headers="*" secure="false"/>
+   <allow-http-request-headers-from domain="classic.2epik4u.xyz" headers="" secure="false"/>
+   <allow-http-request-headers-from domain=""/>
+
+   
+   <allow-action-from domain="github.com"/>
+   <allow-action-from domain="gists.github.com"/>
+   <allow-action-from domain="roku.com"/>
+
+   <!--Blue'ity is cute cuz you enter here!-->
+
+   <!--credit to 2epik4u for stash lol-->
+</cross-domain-policy>

@@ -1,4 +1,7 @@
+:start
+
 title Blue'ity Client - Info
+pushd "./main/"
 @echo off && cls
 ping -n 1 127.0.0.1>nul
 echo Your software info:

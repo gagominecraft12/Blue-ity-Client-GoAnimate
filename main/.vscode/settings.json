@@ -1,0 +1,12 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "Lua.diagnostics.globals": [
+        "wait",
+        "q",
+        "ui",
+        "bit",
+        "x",
+        "n",
+        "urlRequest"
+    ]
+}

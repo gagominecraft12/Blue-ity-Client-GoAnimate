@@ -16,17 +16,13 @@ IT HAS GLITCHES AND BUGS. PLEASE DOWNLOAD IF ITS SURE TO DO WITH.
 
 -----------------------------------
 
-# EXPLANATION OF THE 0.5.0 ERRORS
-
-<h4>Hello. Im `Blue'ity`. To see that i was developing 0.5.0 so i found out a error that Comedy World is not just loading.</h4> <h2><strong>ALSO I REGRET IT.</strong><h2> <h4>Thanks to explain about the 0.5.0 Beta Access. It was just a error of doing this</h4>
-
 # Credits: 
 
 <a href="https://github.com/gagominecraft12">Blue'ity Creator of Blue'ity Client</a>
                                            
 <a href="https://twitter.com/alvinhung">GA/Vyond - Alvin Hung</a>
                                     
-<a href="https://twitter.com/Vyond">GA/Vyond - Assets - Alvin Hung - Creator</a>
+<a href="https://vyond.com">GA/Vyond - Assets - Alvin Hung - Creator - Original Assets (Vyond's Old SWF Video Maker)</a>
                               
 <a href="https://github.com/2Epik4u/">2Epik4u - Main GitHub Assets</a>
                                    

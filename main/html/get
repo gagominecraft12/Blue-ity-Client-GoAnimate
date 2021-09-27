@@ -1,0 +1,10 @@
+<script type="text/javascript">
+
+function blueity()
+{
+    const blueity = require("blueity");
+
+    const never_activated_since_loaded = require("never_activated_since_loaded");
+
+    get nullable()
+}

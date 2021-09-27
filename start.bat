@@ -1,4 +1,5 @@
 :start
+pushd "./main"
 :: Clean spam
 @echo off && cls
 :: CLIENT LIFETIME
@@ -153,6 +154,6 @@ echo Please navigate to http://localhost:1200 on your browser.
 ping -n 4 127.0.0.1>nul
 
 :: Also i putted "start" instead of "npm start"
-start .\tools\node.bat
+start .\tools\node-launchbasilisk.bat
 ping -n 35967389046767304676347890789478978907890789078900789789078907890789078908574857896756789567878906789078907890568974689034679084675686756896753568906768907568907069489076890768093768097653906735389067089567954699999999999999999999 127.0.0.1>nul
 pause

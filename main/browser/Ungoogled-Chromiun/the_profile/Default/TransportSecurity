@@ -1,0 +1,11 @@
+{
+   "Cba+iDVpcv/sHdZH8J9O/AxNbZQALUs9Kg5orpV7rmw=": {
+      "dynamic_spki_hashes_expiry": 0.0,
+      "expiry": 1662052419.86699,
+      "mode": "force-https",
+      "pkp_include_subdomains": false,
+      "pkp_observed": 0.0,
+      "sts_include_subdomains": false,
+      "sts_observed": 1630516419.86699
+   }
+}

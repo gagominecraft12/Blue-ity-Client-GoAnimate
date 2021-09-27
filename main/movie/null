@@ -1,0 +1,21 @@
+const http = require("http");
+const res = require("res");
+
+function blueityclient_null
+
+
+/**
+ * @param {http.IncomingMessage} req
+ * @param {http.ServerResponse} res
+ * @param {import("url").UrlWithParsedQuery} url
+ * @returns {boolean}
+ */
+
+module.exports = function (req, res, url) {
+	var path = url.pathname;
+	if (req.method != "GET" || !path.startsWith("/movie_thumbs")) return;
+	var beg = path.lastIndexOf("/") + 1;
+	var end = path.lastIndexOf(".");
+	var ext = path.substr(end + 1).toLowerCase();
+	if (ext != "png") return;
+}

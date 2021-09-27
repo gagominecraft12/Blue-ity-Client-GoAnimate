@@ -1,0 +1,6 @@
+asset("pickup","FOLDERISAPARENT,false","alt")
+
+{
+    lua:UPSETUP
+    lua{{}}
+}
